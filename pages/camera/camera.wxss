@@ -1,0 +1,24 @@
+.CameraPage {
+  height: 100vh;
+  width: 100vw;
+}
+
+.CameraArea {
+  height: 80%;
+  width: 100vw;
+  background-color: red;
+}
+
+.TakeArea {
+  width: 100vw;
+  margin-top:7% ;
+  background-color: blue;
+  display: flex;
+  justify-content: center; /* 在水平方向上居中 */
+  align-items: center; /* 在垂直方向上居中 */
+}
+
+#photo {
+  margin-left: -18%;
+  margin-right: 10%;
+}

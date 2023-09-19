@@ -1,0 +1,17 @@
+<!--camera.wxml-->
+<view class="CameraPage">
+  <!-- 摄像区 -->
+  <view class="CameraArea">
+  
+  </view>
+  <!-- 功能区 -->
+  <view class="TakeArea">
+   
+    <van-icon model:name="{{PhotoAreaSrc}}" size="40px" bind:click="onPhoto" class="take" id="photo"/>
+    <van-icon model:name="{{TakeAreaSrc}}" size="65px" bind:click="onTake" class="take" id="take"/>
+
+  </view>
+
+
+</view>
+

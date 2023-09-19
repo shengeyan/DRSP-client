@@ -1,0 +1,7 @@
+<!--components/beforelogin/beforelogin.wxml-->
+<view class="login">
+  <van-icon name="user-circle-o" class="login-icon" size="200rpx" color="gray"/>
+  <button type="primary" class="login-btn" bindtap="getUserProfile">一键登录</button>
+  <text class="login-text">登录后尽享更多权益</text>
+  <text>{{userInfo.nickName}}</text>
+</view>

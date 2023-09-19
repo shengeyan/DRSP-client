@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="menu-box {{show_menu && 'active'}}">
+    <!-- <block wx:for="{{menu}}" wx:key="menu">
+      <view style="--n:{{index}};--deg:{{360/ menu.length}}deg" class="menu-box-item {{currIndex===index && 'active'}}" catchtap="clickActive" data-index="{{index}}">
+        <van-icon name="{{item.src}}" class="iconfont icon" style="--deg:{{-360/ menu.length}}deg"/>
+      </view>
+    </block> -->
+
+    <view class="menu-box-active" style="--n:{{currIndex}};--deg:{{360/ menu.length}}deg">
+      
+    </view>
+  </view>
+
+  <view class="menu-add-box {{show_menu && 'active'}}" bindtap="ChangeLogo" catchtap="ChangeLogo">
+    <!-- <van-icon name="{{menu_add}}" class="iconfont icon"/> -->
+    <van-icon  class="iconfont icon" bind:tap="ChangeLogo" model:name="{{logoSrc}}"></van-icon>
+  </view>
+
+</view>

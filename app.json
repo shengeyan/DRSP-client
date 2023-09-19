@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/chat/chat",
+    "pages/camera/camera"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff7500",
+    "navigationBarTitleText": "配料表识别",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/image/main1.png",
+      "selectedIconPath": "/image/main2.png"
+    },{
+      "pagePath": "pages/chat/chat",
+      "text": "聊天",
+      "iconPath": "/image/chat1.png",
+      "selectedIconPath": "/image/chat2.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "/image/user1.png",
+      "selectedIconPath": "/image/user2.png"
+    }
+   ],
+   "selectedColor": "#ff7500"
+  }
+}

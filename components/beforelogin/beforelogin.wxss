@@ -1,0 +1,22 @@
+/* components/beforelogin/beforelogin.wxss */
+.login {
+  height: 750rpx;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .login-btn {
+  width: 90%;
+  border-radius: 100px;
+  margin: 30rpx 0;
+  background-color: #ff7500;
+  letter-spacing: 5rpx;
+}
+
+.login .login-text {
+  font-size: 24rpx;
+  color: gray;
+}
