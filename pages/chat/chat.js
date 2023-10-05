@@ -61,12 +61,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    console.log("onShow")
     if (wx.getStorageSync('expireTime') == null || wx.getStorageSync('expireTime') < Date.now()) {
       wx.removeStorageSync('expireTime')
       let username = wx.getStorageSync('username')
       wx.removeStorageSync('username')
       wx.request({
-        url: 'http://cfc.bilibili.info:20131/project/chat',
+        url: 'http://192.168.1.241:8080/project/chat',
         method: "post",
         data: {
           "question":"小麦粉",

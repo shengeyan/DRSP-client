@@ -3,10 +3,22 @@
   width: 100vw;
 }
 
-.CameraArea {
+.CameraTextArea {
   height: 80%;
   width: 100vw;
   background-color: red;
+}
+
+.CameraArea {
+  width: 100vw;
+  height: 70%;
+  background-color: #000000;
+}
+
+.TextArea {
+  width: 100vw;
+  height: 30%;
+  background-color: green;
 }
 
 .TakeArea {

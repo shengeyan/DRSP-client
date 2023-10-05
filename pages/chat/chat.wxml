@@ -40,8 +40,9 @@
   </scroll-view>
 
   <view class='inputRoom' style='bottom: {{inputBottom}}'>
-    <image style='width: 7vw; margin-left: 3.2vw;' src='http://127.0.0.1:80/images/文件夹.png' mode='widthFix'></image>
-    <input bindconfirm='sendClick' adjust-position='{{false}}' value='{{inputVal}}' confirm-type='send' bindfocus='focus' bindblur='blur'></input>
-    <button bind:tap="onShow" >发送</button>
+    <image style='width: 7vw; margin-left: 3.2vw;' src='/image/chat1.png' mode='widthFix'></image>
+    <input bindconfirm='sendClick' adjust-position='{{false}}' value='{{inputVal}}' confirm-type='send' bindfocus='focus' bindblur='blur' style="margin-right: 2px;"></input>
+    <!-- <button  bind:tap="onShow" >发送</button> -->
+    <van-button type="info" bind:click="onShow"  size="normal"  custom-style="width:70px;margin-right:2px;color:black; background-color: #FFFFFF;" round="true">发送</van-button>
   </view>
 </view>

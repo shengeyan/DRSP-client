@@ -12,7 +12,8 @@ Page({
     PhotoAreaSrcS:[
       "/image/xiangCe1.png",
       "/image/xiangCe2.png"
-    ]
+    ],
+    ImageSrc:"https://img.yzcdn.cn/vant/cat.jpeg",
   },
   onCamera(){
     
@@ -22,15 +23,14 @@ Page({
     let change=!this.data.changeTake
     if(change){
       this.setData({
-        changeTake:change,
         TakeAreaSrc:this.data.TakeAreaSrcS[1]
       })
       this.onTakePhoto()
-    }else{
-      this.setData({
-        changeTake:change,
-        TakeAreaSrc:this.data.TakeAreaSrcS[0]
-      })
+      setTimeout(()=>{
+        this.setData({
+          TakeAreaSrc:this.data.TakeAreaSrcS[0]
+        })
+      },1000)
     }
   },
   //相册状态切换函数
@@ -50,18 +50,33 @@ Page({
   },
   //拍照函数
   onTakePhoto(){
+    //获取照片
     wx.chooseMedia({
-      count: 9,
+      count: 1,
       mediaType: ['image','video'],
       sourceType: ['album', 'camera'],
       maxDuration: 30,
       camera: 'back',
-      success(res) {
-        console.log(res.tempFiles.tempFilePath)
-        console.log(res.tempFiles.size)
+      success: (res) => {
+        console.log(res)
+        this.onChangeCameraArea(res.tempFiles[0].tempFilePath);
+
       }
     })
+    
+  },
+  //修改Camera图片函数
+  onChangeCameraArea(src){
+    this.setData({
+      ImageSrc:src
+    })
+  },
+  //裁剪图片
+  onCutImage(){
+    wx.cropImage({
+      src: '', // 图片路径
+      cropScale: '16:9', // 裁剪比例
+    })
   }
-
   
 })
