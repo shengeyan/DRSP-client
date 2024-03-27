@@ -1,29 +1,41 @@
+<!-- 摄像页面 -->
 <!--camera.wxml-->
 <view class="CameraPage">
   <!-- 摄像与文字编辑区 -->
   <view class="CameraTextArea">
     <!-- 摄像区 -->
     <view class="CameraArea">
-      <van-image
-      width="100%"
-      height="100%"
-      fit="contain"
-      model:src="{{ImageSrc}}"
-    />
+      <van-image width="100%" height="100%" fit="contain" model:src="{{ImageSrc}}" />
     </view>
     <!-- 文字编辑区 -->
     <view class="TextArea">
+      <!-- <van-cell-group>
+        <van-field
+          value="{{ valueText }}"
+          placeholder="请输入你要补充的文字信息"
+          border="{{ false }}"
+          bind:change="onChange"
+        />
+      </van-cell-group> -->
+      <!-- <van-cell-group class="custom-cell-group">
+        <van-field
+          value="{{ valueText }}"
+          placeholder="请输入你要补充的文字信息"
+          border="{{ false }}"
+          type="textarea"
+          autosize
+          bind:change="onChange"
+          custom-class="custom-field"
+        />
+      </van-cell-group>
 
+      <button wx:if="{{buttonFlag}}" bind:tap="onSend">确认</button> -->
     </view>
   </view>
   <!-- 功能区 -->
   <view class="TakeArea">
-<!--    
+    <!--    
     <van-icon model:name="{{PhotoAreaSrc}}" size="40px" bind:click="onPhoto" class="take" id="photo"/> -->
-    <van-icon model:name="{{TakeAreaSrc}}" size="65px" bind:click="onTake" class="take" id="take"/>
-
+    <van-icon model:name="{{TakeAreaSrc}}" size="65px" bind:click="onTake" class="take" id="take" />
   </view>
-
-
 </view>
-

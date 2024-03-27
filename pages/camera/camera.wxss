@@ -6,28 +6,44 @@
 .CameraTextArea {
   height: 80%;
   width: 100vw;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .CameraArea {
   width: 100vw;
-  height: 70%;
+  height: 65%;
   background-color: #000000;
 }
 
 .TextArea {
   width: 100vw;
   height: 30%;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .TakeArea {
   width: 100vw;
-  margin-top:7% ;
-  background-color: blue;
+  margin-top: 7%;
+  /* background-color: blue; */
   display: flex;
   justify-content: center; /* 在水平方向上居中 */
   align-items: center; /* 在垂直方向上居中 */
+}
+
+.custom-cell-group {
+  width: 100%;
+  height: 80%;
+}
+
+.custom-field {
+  width: 100%;
+  height: 100%;
+}
+
+.TextArea button {
+  width: 100%;
+  height: 20%;
+  border-radius: 0%;
 }
 
 #photo {

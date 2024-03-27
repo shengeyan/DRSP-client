@@ -3,6 +3,9 @@
 page {
   background-color: #f1f1f1;
 }
+scroll-view {
+  height: 100vh; /* 减去输入区域的高度 */
+}
 
 .inputRoom {
   width: 100vw;
@@ -43,7 +46,7 @@ input {
   color: #444;
   line-height: 7vw;
   padding: 2vw 2.5vw;
-  background-color: #96EB6A;
+  background-color: #96eb6a;
   margin-right: -1.6vw;
   border-radius: 10rpx;
   z-index: 10;

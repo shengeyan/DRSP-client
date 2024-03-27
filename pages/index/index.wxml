@@ -1,6 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-
   <view class="menu-box {{show_menu && 'active'}}">
     <!-- <block wx:for="{{menu}}" wx:key="menu">
       <view style="--n:{{index}};--deg:{{360/ menu.length}}deg" class="menu-box-item {{currIndex===index && 'active'}}" catchtap="clickActive" data-index="{{index}}">
