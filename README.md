@@ -50,6 +50,3 @@
 
 ![效果](https://raw.githubusercontent.com/shengeyan/image/master/img90132ff45b49ff273ba8ad873efeb030.jpg)
 
-## ⚠️ 注意事项
-
-> 后端接口地址在 `pages/chat/chat.js` 与 `pages/camera/camera.js` 中配置，当前为内网调试地址，正式使用前请替换为线上服务地址。
